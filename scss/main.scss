@@ -1,0 +1,79 @@
+@import 'variables';
+
+.submit-button{
+    margin-top: 2vw;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+  }
+
+#main-grid {
+
+    display: grid;
+    width: $main-grid-width;
+    grid-template-columns: repeat(9,1fr);
+    // border-right: $light-border solid black;
+    // border-left: $dark-border solid black;
+    // border-top :$dark-border solid black;
+    // border-bottom: $dark-border solid black;
+    text-align: center;
+    // text-justify: center;
+
+  }
+
+select { 
+/* for Firefox */ 
+-moz-appearance: none; 
+/* for Safari, Chrome, Opera */ 
+-webkit-appearance: none; 
+} 
+
+
+
+#item {
+    height: $row-height;
+    line-height: $row-height;
+    font-size: 2.5vw;
+    text-align: center;
+}
+
+#drop-down {
+    border: transparent;
+    height: $row-height;
+    line-height: $row-height;
+    font-size: 2.5vw;
+    width: $row-height;
+    background-color: rgb(247, 223, 241);
+    text-align: center;
+}
+
+.item4 {
+    border-right: $dark-border solid black;
+    border-bottom: $dark-border solid black;
+    border-left: $light-border solid black;
+    border-top: $light-border solid black;
+    
+}
+
+.item3 {
+    border-left: $light-border solid black;
+    border-top: $light-border solid black;
+    border-right: $dark-border solid black;
+    border-bottom: $light-border solid black;
+}
+
+.item2 {
+    border-left: $light-border solid black;
+    border-top: $light-border solid black;
+    border-right: $light-border solid black;
+    border-bottom: $dark-border solid black;
+}
+
+.item1 {
+    border: $light-border solid black;
+}
+
+
+
