@@ -1,79 +1,58 @@
 @import 'variables';
 
-.submit-button{
-    margin-top: 2vw;
-}
-
-.container {
+.container{
     display: flex;
     justify-content: center;
-  }
+}
+#head{
+    font-size: 1.5vw;
+}
 
 #main-grid {
-
-    display: grid;
-    width: $main-grid-width;
-    grid-template-columns: repeat(9,1fr);
-    // border-right: $light-border solid black;
-    // border-left: $dark-border solid black;
-    // border-top :$dark-border solid black;
-    // border-bottom: $dark-border solid black;
-    text-align: center;
-    // text-justify: center;
-
-  }
-
-select { 
-/* for Firefox */ 
--moz-appearance: none; 
-/* for Safari, Chrome, Opera */ 
--webkit-appearance: none; 
-} 
-
-
-
-#item {
-    height: $row-height;
-    line-height: $row-height;
-    font-size: 2.5vw;
-    text-align: center;
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    margin-bottom: 2vw;
+    border: 0.1vw solid black;
 }
 
-#drop-down {
+.small-grid {
+    display: inline-grid;
+    grid-template-columns: repeat(3,1fr);
+    border: 0.05vw solid black;
+}
+
+.cell {
+    font-family: "Times New Roman", Times, serif;
+    height: 4vw;
+    width: 4vw;
+    border: 0.01vw dashed black;
+    font-size: 2vw;
+    text-align: center;
+    align-content: center;
+}
+
+.btn{
+    width: 8vw;
+    background-color: gray;
+    color: white;
+    font-size: 1.5vw;
+}
+
+select {
+    /* for Firefox */
+    -moz-appearance: none;
+    /* for Safari, Chrome, Opera */
+    -webkit-appearance: none;
+}
+
+.drop-down {
     border: transparent;
-    height: $row-height;
-    line-height: $row-height;
-    font-size: 2.5vw;
-    width: $row-height;
-    background-color: rgb(247, 223, 241);
+    height: 4vw;
+    line-height: 4vw;
+    font-size: 2vw;
+    width: 4vw;
+    background-color: rgb(186, 201, 250);
+    font-family: "Times New Roman", Times, serif;
     text-align: center;
+    align-content: center;
 }
-
-.item4 {
-    border-right: $dark-border solid black;
-    border-bottom: $dark-border solid black;
-    border-left: $light-border solid black;
-    border-top: $light-border solid black;
-    
-}
-
-.item3 {
-    border-left: $light-border solid black;
-    border-top: $light-border solid black;
-    border-right: $dark-border solid black;
-    border-bottom: $light-border solid black;
-}
-
-.item2 {
-    border-left: $light-border solid black;
-    border-top: $light-border solid black;
-    border-right: $light-border solid black;
-    border-bottom: $dark-border solid black;
-}
-
-.item1 {
-    border: $light-border solid black;
-}
-
-
-
